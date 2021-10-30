@@ -1,0 +1,86 @@
+@import "../../utils/global.scss";
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  position: relative;
+
+  .imgWrapper {
+    position: relative;
+
+    button {
+      transition: 0.5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 144px;
+      height: 42px;
+      border: none;
+      color: #fff;
+      font-weight: 600;
+      background: #ffa200;
+      text-decoration: none;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(192, 171, 226, 0.6);
+      opacity: 0;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+    }
+    &:before {
+      opacity: 0;
+    }
+    &:hover:before {
+      opacity: 1;
+    }
+    &:hover button {
+      opacity: 1;
+    }
+  }
+
+  .cardInfo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    color: $gray;
+
+    .name {
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+    .description {
+      text-align: center;
+    }
+    .priceContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .sellingPrice {
+        font-weight: 700;
+      }
+
+      p {
+        padding: 1rem 0.5rem;
+      }
+    }
+  }
+
+  .selo {
+    position: absolute;
+    z-index: 9999;
+  }
+}

@@ -1,0 +1,16 @@
+// font
+$font-montserrat: "Montserrat", sans-serif;
+
+// cores
+$purple: #8158c5;
+$yellow: #ffa200;
+$gray: #7f7f7f;
+$white: #ffff;
+
+// global
+* {
+  font-family: $font-montserrat;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
