@@ -2,6 +2,14 @@ import "./index.scss";
 import footerLogo from "../../assets/footerLogo.png";
 import serieLogo from "../../assets/serieLogo.png";
 import { FaFacebook, FaInstagramSquare, FaTwitterSquare } from "react-icons/fa";
+import visa from "../../assets/visa.png";
+import mastercard from "../../assets/mastercard.png";
+import american from "../../assets/american.png";
+import diners from "../../assets/dinersclub.png";
+import hiper from "../../assets/hipercard.png";
+import aura from "../../assets/aura.png";
+import elo from "../../assets/elo.png";
+import boleto from "../../assets/boleto.png";
 
 export const Footer = () => {
   const petstoreLinks = [
@@ -22,40 +30,7 @@ export const Footer = () => {
       link: "www.google.com",
     },
   ];
-  const paymentImages = [
-    {
-      alt: "Visa",
-      img: "src/assets/visa.png",
-    },
-    {
-      alt: "MasterCard",
-      img: "src/assets/mastercard.png",
-    },
-    {
-      alt: "American Express",
-      img: "src/assets/american.png",
-    },
-    {
-      alt: "Diners Club",
-      img: "src/assets/dinersclub.png",
-    },
-    {
-      alt: "HiperCard",
-      img: "src/assets/hipercard.png",
-    },
-    {
-      alt: "Aura",
-      img: "src/assets/aura.png",
-    },
-    {
-      alt: "Elo",
-      img: "src/assets/elo.png",
-    },
-    {
-      alt: "Boleto",
-      img: "src/assets/boleto.png",
-    },
-  ];
+
   return (
     <footer className="footerContainer">
       <div className="footerWrapper">
@@ -89,13 +64,14 @@ export const Footer = () => {
           <div className="paymentInfo">
             <h4>Pagamento</h4>
             <div className="images">
-              {paymentImages.map((paymentItem) => (
-                <img
-                  key={paymentItem.alt}
-                  src={paymentItem.img}
-                  alt={paymentItem.alt}
-                />
-              ))}
+              <img src={visa} alt="Visa" />
+              <img src={mastercard} alt="MasterCard" />
+              <img src={american} alt="american express" />
+              <img src={diners} alt="diners club" />
+              <img src={hiper} alt="hipercard" />
+              <img src={aura} alt="aura" />
+              <img src={elo} alt="elo" />
+              <img src={boleto} alt="boleto" />
             </div>
           </div>
         </div>

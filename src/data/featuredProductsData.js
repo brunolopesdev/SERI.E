@@ -1,3 +1,8 @@
+import produto1 from "../assets/produto1.png"
+import produto2 from "../assets/produto2.png"
+import produto3 from "../assets/produto3.png"
+import produto4 from "../assets/produto4.png"
+
 export const featuredProductsData = [
     {
         "id": 1,
@@ -6,7 +11,7 @@ export const featuredProductsData = [
         "price": 99.99,
         "selo": "",
         "sellingPrice": "",
-        "image": "src/assets/produto1.png"
+        "image": produto1
     },
     {
         "id": 2,
@@ -15,7 +20,7 @@ export const featuredProductsData = [
         "price": 99.99,
         "selo": "src/assets/selo50off.png",
         "sellingPrice": "",
-        "image": "src/assets/produto2.png"
+        "image": produto2
     },
     {
         "id": 3,
@@ -24,7 +29,7 @@ export const featuredProductsData = [
         "price": 99.99,
         "selo": "",
         "sellingPrice": 99.99,
-        "image": "src/assets/produto3.png"
+        "image": produto3
     },
     {
         "id": 4,
@@ -33,7 +38,7 @@ export const featuredProductsData = [
         "price": 99.99,
         "selo": "src/assets/seloNovo.png",
         "sellingPrice": 99.99,
-        "image": "src/assets/produto4.png"
+        "image": produto4
     },
     {
         "id": 5,
@@ -42,7 +47,7 @@ export const featuredProductsData = [
         "price": 99.99,
         "selo": "",
         "sellingPrice": "",
-        "image": "src/assets/produto1.png"
+        "image": produto1
     },
     {
         "id": 6,
@@ -51,7 +56,7 @@ export const featuredProductsData = [
         "price": 99.99,
         "selo": "",
         "sellingPrice": "",
-        "image": "src/assets/produto2.png"
+        "image": produto2
     },
     {
         "id": 7,
@@ -60,7 +65,7 @@ export const featuredProductsData = [
         "price": 99.99,
         "selo": "",
         "sellingPrice": 99.99,
-        "image": "src/assets/produto3.png"
+        "image": produto3
     },
     {
         "id": 8,
@@ -69,6 +74,6 @@ export const featuredProductsData = [
         "price": 99.99,
         "selo": "",
         "sellingPrice": 99.99,
-        "image": "src/assets/produto4.png"
+        "image": produto4
     }
 ];
