@@ -2,6 +2,8 @@ import produto1 from "../assets/produto1.png"
 import produto2 from "../assets/produto2.png"
 import produto3 from "../assets/produto3.png"
 import produto4 from "../assets/produto4.png"
+import selo50off from "../assets/selo50off.png"
+import seloNovo from "../assets/seloNovo.png"
 
 export const newProductData = [
     {
@@ -18,7 +20,7 @@ export const newProductData = [
         "name": "Cama de Cachorro",
         "desc": "Lorem ipsum dolor sit.",
         "price": 99.99,
-        "selo": "src/assets/selo50off.png",
+        "selo": selo50off,
         "sellingPrice": "",
         "image": produto2
     },
@@ -36,7 +38,7 @@ export const newProductData = [
         "name": "Caixa de Areia",
         "desc": "Lorem ipsum dolor sit.",
         "price": 99.99,
-        "selo": "src/assets/seloNovo.png",
+        "selo": seloNovo,
         "sellingPrice": 99.99,
         "image": produto4
     }

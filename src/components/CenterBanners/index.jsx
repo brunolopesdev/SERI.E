@@ -1,15 +1,17 @@
 import "./index.scss";
+import bannerGatos from "../../assets/bannerGatos.png";
+import bannerCachorros from "../../assets/bannerCachorros.png";
 
 export const CenterBanners = () => {
   const centerBanners = [
     {
       id: 1,
-      img: "src/assets/bannerGatos.png",
+      img: bannerGatos,
       alt: "Para Gatos",
     },
     {
       id: 2,
-      img: "src/assets/bannerCachorros.png",
+      img: bannerCachorros,
       alt: "Para Cachorros",
     },
   ];
