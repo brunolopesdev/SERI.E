@@ -1,0 +1,44 @@
+@import "../../utils/global.scss";
+
+.bannerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+
+  .bannerWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1170px;
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
+
+    .banners {
+      &:nth-child(1) {
+        margin-right: 0.75rem;
+      }
+
+      &:nth-child(2) {
+        margin-left: 0.75rem;
+      }
+      img {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 1024px) {
+        &:nth-child(1) {
+          margin-right: 0;
+        }
+
+        &:nth-child(2) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

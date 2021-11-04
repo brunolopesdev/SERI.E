@@ -1,0 +1,111 @@
+@import "../../utils/global.scss";
+
+.preFooterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: $purple;
+
+  .preFooterInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1170px;
+
+    .infoWrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 1.5rem 0;
+
+      div {
+        color: $white;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          padding-right: 0.5rem;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+
+        div {
+          padding: 0.5rem 0;
+        }
+      }
+    }
+
+    hr {
+      width: 100%;
+      border: 1px solid $yellow;
+    }
+
+    .newsletterWrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem 0;
+      color: $white;
+      text-align: center;
+
+      h1 {
+        font-size: 26px;
+        text-transform: uppercase;
+        padding-bottom: 1.5rem;
+        font-weight: 400;
+      }
+
+      p {
+        font-size: 16px;
+        padding-bottom: 4.5rem;
+      }
+
+      .inputContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        input {
+          margin-top: 1rem;
+          background: transparent;
+          outline: 0;
+          border-width: 0 0 2px;
+          border-color: $white;
+          margin-left: 1.5rem;
+
+          &::placeholder {
+            color: $white;
+          }
+        }
+        button {
+          color: $white;
+          width: 80px;
+          height: 35px;
+          background: $yellow;
+          text-transform: uppercase;
+          font-weight: bold;
+          border: none;
+          cursor: pointer;
+          margin-left: 1.5rem;
+        }
+
+        @media screen and (max-width: 425px) {
+          flex-direction: column;
+
+          button {
+            margin-top: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+}

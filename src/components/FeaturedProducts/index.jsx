@@ -1,13 +1,13 @@
 import "./index.scss";
-import { newProductData } from "../../data/newProductData";
 import { ProductCard } from "../ProductCard";
+import { featuredProductsData } from "../../data/featuredProductsData";
 
-export const NewProducts = () => {
+export const FeaturedProducts = () => {
   return (
-    <section className="mainContainer">
-      <h1 className="title">NOVIDADES</h1>
-      <div className="mainWrapper">
-        {newProductData.map((item) => (
+    <section className="featuredContainer">
+      <h1 className="title">DESTAQUES</h1>
+      <div className="featuredWrapper">
+        {featuredProductsData.map((item) => (
           <ProductCard
             key={item.id}
             name={item.name}

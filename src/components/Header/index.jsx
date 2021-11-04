@@ -10,8 +10,11 @@ import {
   MdSearch,
   MdViewHeadline,
 } from "react-icons/md";
+import { useState } from "react";
 
 export const Header = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <header className="headerContainer">
       <div className="preHeader">
@@ -25,7 +28,7 @@ export const Header = () => {
         <div className="leftIcons">
           <MdAccountCircle />
           <MdShoppingCart />
-          <p className="count">22</p>
+          <p className="count">99</p>
         </div>
       </div>
       <nav className="navbarContainer">
@@ -38,12 +41,31 @@ export const Header = () => {
             <li className="navItem">Categoria</li>
             <li className="navItem">Categoria</li>
             <li className="navItem">Categoria</li>
-            <li className="navItem">
-              <MdViewHeadline />
+            <li className="navMobile">
+              <i className="hamburger" onClick={() => setShowMenu(!showMenu)}>
+                <MdViewHeadline />
+              </i>
             </li>
           </ul>
         </div>
       </nav>
+
+      {showMenu && (
+        <nav className="mobileNavbar">
+          <div className="mobileNavWrapper">
+            <ul className="mobileNavLinks">
+              <li className="mobileNavItem">Categoria</li>
+              <li className="mobileNavItem">Categoria</li>
+              <li className="mobileNavItem">Categoria</li>
+              <li className="mobileNavItem">Categoria</li>
+              <li className="mobileNavItem">Categoria</li>
+              <li className="mobileNavItem">Categoria</li>
+              <li className="mobileNavItem">Categoria</li>
+            </ul>
+          </div>
+        </nav>
+      )}
+
       <div className="mainBanner">
         <img src={bannerFull} alt="Banner Principal" className="bannerFull" />
       </div>
